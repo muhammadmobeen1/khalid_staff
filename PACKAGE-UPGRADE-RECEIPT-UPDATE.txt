@@ -1,0 +1,6 @@
+Package Upgrade + Immediate Receipt Update
+- Staff selects the new package and enters the amount received/new bill amount.
+- Staff can print the PACKAGE UPGRADED receipt immediately after submitting.
+- The request remains pending; web dashboard/bill/package/payment totals do not change until admin approval.
+- On approval: customer package + monthly fee + current bill are updated, then the received amount is posted as the official payment.
+- On rejection: official customer/bill/payment records remain unchanged.

@@ -1,0 +1,28 @@
+ANDROID V2 BUILD FIX
+====================
+This package includes an automatic repair for the Flutter error:
+"Build failed due to use of deleted Android v1 embedding."
+
+Cause in the previous ZIP:
+The app-level Android files were Flutter v2 compatible, but the Android platform project was incomplete (root settings/Gradle wrapper files were missing).
+
+Recommended build on Windows PowerShell:
+
+Set-ExecutionPolicy -Scope Process Bypass
+.\build-windows.ps1
+
+The build script detects an incomplete Android project and runs repair-android.ps1 automatically. The repair uses your installed Flutter SDK to regenerate a current Android v2 scaffold, then reapplies:
+- package id com.khalidnetworks.staff
+- Khalid Networks Staff app label
+- Bluetooth permissions
+- location/internet permissions
+- Flutter v2 MainActivity
+- existing launcher resources
+
+After a successful build, the copied APK will be:
+Khalid-Networks-Staff.apk
+
+You can also manually repair first:
+Set-ExecutionPolicy -Scope Process Bypass
+.\repair-android.ps1
+flutter build apk --release

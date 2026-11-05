@@ -1,0 +1,12 @@
+Khalid Networks Staff v1.1.1 compile fix
+
+Fixes:
+- Added missing orange color alias used by receipt/history UI.
+- Added missing StatusPill widget.
+- Pinned print_bluetooth_thermal to 1.2.1 for Flutter 3.38.3 compatibility.
+- Release APK remains signed with debug key for manual installation/testing.
+
+Build:
+  flutter clean
+  flutter pub get
+  flutter build apk --release

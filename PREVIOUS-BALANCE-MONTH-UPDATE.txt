@@ -1,0 +1,5 @@
+Staff app Previous Balance Month update
+- Collection screen shows Previous Balance and Previous Balance Month.
+- Previous regular monthly pending (if any) stays separate.
+- Receipt shows Previous Balance plus Previous Month, then Current Bill, Total Due, Amount Paid, Remaining.
+- Existing latest receipt formatting is preserved.

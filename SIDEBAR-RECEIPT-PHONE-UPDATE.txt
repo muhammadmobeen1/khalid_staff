@@ -1,0 +1,1 @@
+Thermal/provisional receipt now shows company phone 0345-4802167. Existing partial-payment logic and small RECEIVED RS amount font are preserved. Database was not modified.

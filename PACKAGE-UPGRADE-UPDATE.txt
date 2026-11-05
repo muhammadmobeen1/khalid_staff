@@ -1,0 +1,10 @@
+Khalid Networks Staff App - Package Upgrade Request
+
+- Bill card now has Upgrade action.
+- Staff selects an active package and enters the requested new bill/monthly amount.
+- Request is sent to admin for approval; no official bill/customer values change before approval.
+- Admin approval updates customer package, monthly fee, and the current bill amount.
+- Future generated bills use the approved new monthly fee.
+- Rejected requests do not change official records.
+- A pending collection and package upgrade cannot exist together for the same customer.
+- Database schema upgrade v13 is required once via setup.php on the web system.

@@ -1,0 +1,21 @@
+KHALID NETWORKS STAFF APP - CLIENT TEST CHECKLIST
+
+Backend
+[ ] Upload mobile-api.php beside staff-api.php on the live Hostinger site.
+[ ] Open https://mistyrose-reindeer-364324.hostingersite.com/mobile-api.php in browser: GET should not be used; app uses POST.
+[ ] Existing config.php keeps staff_remote_enabled=true and correct HTTPS staff_base_url.
+
+App
+[ ] Login with existing Staff ID + password.
+[ ] Dashboard shows staff name, role and assigned villages.
+[ ] Start Duty asks for location permission and updates office tracking.
+[ ] Stop Duty switches sharing off.
+[ ] Bills shows assigned unpaid bills.
+[ ] Payment submission appears in admin Team Management > Approvals.
+[ ] New Connection submission appears for admin approval.
+[ ] Assigned complaint can be reported fixed.
+[ ] Pending/rejected shows admin rejection reason.
+[ ] Profile picture upload/remove works.
+[ ] Sign out clears saved app session.
+
+Note: GPS updates every ~30 seconds while the app is open/active. Android may pause foreground app timers if the OS aggressively restricts the app or it is force-closed.

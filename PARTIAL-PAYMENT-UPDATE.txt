@@ -1,0 +1,8 @@
+Khalid Networks partial payment update
+- Receive amount defaults to total customer due (current + previous pending).
+- Actual received amount can be entered manually from > 0 up to total due.
+- Overpayment above the customer's dynamic total due is blocked.
+- Payments are allocated automatically across unpaid bills through the selected month.
+- Remaining balance stays pending automatically.
+- Staff provisional receipts use the same total/received/remaining calculation.
+- 58mm receipt RECEIVED RS amount uses smaller text to avoid wrapping.
